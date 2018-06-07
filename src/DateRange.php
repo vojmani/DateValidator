@@ -30,9 +30,8 @@ class DateRange extends Constraint
     public function __construct(array $options = null)
     {
         parent::__construct($options);
-        /*$this->min = isset($options['min']) ? $options['min'] : null;
-        $this->max = isset($options['max']) ? $options['max'] : null;
-        $this->message = isset($options['message']) ? $options['message'] : "constraints.daterange_message";*/
+        if(!isset($options['min']) && !isset($options['max']))
+            throw new \InvalidArgumentException("No range set. At least 'min' or 'max' has to be set.");
     }
 
     public function validatedBy()
