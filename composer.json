@@ -1,0 +1,14 @@
+{
+  "name": "vojtamaniak/datevalidator",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vojtěch Krupka",
+      "email": "vojtech@vojtamaniak.cz"
+    }
+  ],
+  "require": {
+    "php": ">7.0",
+    "symfony/symfony": "^3.0 || ^4.0"
+  }
+}
