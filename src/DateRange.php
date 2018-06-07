@@ -15,24 +15,24 @@ class DateRange extends Constraint
     /**
      * @var \DateTime
      */
-    private $min;
+    public $min;
 
     /**
      * @var \DateTime
      */
-    private $max;
+    public $max;
 
     /**
      * @var string
      */
-    private $message;
+    public $message;
 
     public function __construct(array $options = null)
     {
         parent::__construct($options);
-        $this->min = isset($options['min']) ? $options['min'] : null;
+        /*$this->min = isset($options['min']) ? $options['min'] : null;
         $this->max = isset($options['max']) ? $options['max'] : null;
-        $this->message = isset($options['message']) ? $options['message'] : "constraints.daterange_message";
+        $this->message = isset($options['message']) ? $options['message'] : "constraints.daterange_message";*/
     }
 
     public function validatedBy()
